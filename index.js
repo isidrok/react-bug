@@ -37,6 +37,7 @@ class App extends React.Component {
             <div>
                 <h1 onClick={() => this.setState({show: !this.state.show})}>Click me!</h1>
                 {this.state.show && <Wrapper />}
+                {/* Swap components to see the exception */}
                 {/* {this.state.show && <LazyHello />} */}
             </div>
         );
